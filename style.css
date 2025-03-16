@@ -1,0 +1,25 @@
+/* Custom styles complementing Tailwind */
+.dark {
+    color-scheme: dark;
+}
+
+.nav-link {
+    @apply text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors;
+}
+
+.feature-card {
+    @apply p-6 rounded-xl bg-gray-50 dark:bg-gray-700 hover:shadow-lg transition-shadow;
+}
+
+.ad-unit {
+    @apply h-[250px] bg-gray-100 dark:bg-gray-700 rounded-lg;
+    background-image: url('data:image/svg+xml;utf8,<svg ...>Ad Placeholder</svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}

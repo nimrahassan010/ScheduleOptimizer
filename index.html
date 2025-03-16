@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeMaster - Smart Time Management Tool | Free Online Planner</title>
+    <meta name="description" content="Boost productivity with TimeMaster's free time tracking and task management tools. Features Pomodoro timer, habit tracker, and smart schedule planner.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TimeMaster",
+        "applicationCategory": "ProductivityTool",
+        "operatingSystem": "Web",
+        "screenshot": "assets/images/hero.webp",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "286"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 dark:text-white">TimeMaster</a>
+            <div class="flex items-center gap-6">
+                <a href="/tool.html" class="nav-link">Tool</a>
+                <a href="/blog.html" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <svg class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 20 20">...</svg>
+                    <svg class="w-6 h-6 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">...</svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-20 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 dark:text-white">Transform Your Productivity</h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">Smart time management for focused work</p>
+        <div class="max-w-3xl mx-auto">
+            <img src="assets/images/hero.webp" alt="Productivity dashboard interface" 
+                 class="rounded-xl shadow-xl" loading="lazy" width="1200" height="630">
+        </div>
+    </section>
+
+    <!-- Ad Unit (Header) -->
+    <div class="ad-unit header-ad container mx-auto px-4 mb-12"></div>
+
+    <!-- Features Grid -->
+    <section class="bg-white dark:bg-gray-800 py-20">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <!-- Feature Cards -->
+            <div class="feature-card">
+                <h2 class="text-xl font-bold mb-4 dark:text-white">Task Management</h2>
+                <p class="text-gray-600 dark:text-gray-300">Priority-based organization with deadlines</p>
+            </div>
+            <!-- More features... -->
+        </div>
+    </section>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
